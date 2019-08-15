@@ -5,7 +5,7 @@ const StyledContainer = styled.div`
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: #333852;
+    background: ${props => props.theme.primaryBg};
     
     &:before {
     content: "NETFLIXY";
