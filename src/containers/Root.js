@@ -5,13 +5,15 @@ import store from '../store';
 import DevTools from './DevTools';
 import StyledContainer from '../components/StyledContainer';
 import theme from '../constants/theme';
+import App from '../components/App';
 
 const Root = () => {
     return (
         <Provider store={store}>
             <ThemeProvider theme={theme}>
                 <StyledContainer>
-                    {/*<DevTools />*/}
+                    <App />
+                    <DevTools />
                 </StyledContainer>
             </ThemeProvider>
         </Provider>
