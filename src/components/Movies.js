@@ -4,6 +4,8 @@ import StyledHeader from './StyledHeader';
 import StyledHeaderTitle from './StyledHeaderTitle';
 import StyledHorizontalScroll from './StyledHorizontalScroll';
 import Movie from './Movie';
+import StyledFooter from './StyledFooter';
+import StyledLargeBtn from './StyledLargeBtn';
 import { movies } from '../staticData';
 
 
@@ -26,6 +28,9 @@ const Movies = () => {
                     />
                 ))}
             </StyledHorizontalScroll>
+            <StyledFooter>
+                <StyledLargeBtn>Get Recommended Movies</StyledLargeBtn>
+            </StyledFooter>
         </Fragment>
     );
 };
