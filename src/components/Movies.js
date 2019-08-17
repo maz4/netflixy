@@ -6,8 +6,7 @@ import StyledHorizontalScroll from './StyledHorizontalScroll';
 import Movie from './Movie';
 import StyledFooter from './StyledFooter';
 import StyledLargeBtn from './StyledLargeBtn';
-import { movies } from '../staticData';
-
+const movies = []
 
 const Movies = () => {
     return (
