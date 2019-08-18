@@ -1,6 +1,7 @@
 import { handleActions } from 'redux-actions';
-import { GET_MOVIE } from '../constants/actionTypes';
+import { SET_MOVIES } from '../constants/actionTypes';
 
-export default handleActions({
-    [GET_MOVIE]: (state, action) => state
+export default handleActions(
+    {
+    [SET_MOVIES]: (state, action) => action.payload
 }, {});
