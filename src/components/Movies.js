@@ -6,6 +6,7 @@ import StyledHorizontalScroll from './StyledHorizontalScroll';
 import Movie from './Movie';
 import StyledFooter from './StyledFooter';
 import StyledLargeBtn from './StyledLargeBtn';
+import StyledLoader from './StyledLoader';
 
 class Movies extends Component {
     componentDidMount() {
@@ -22,14 +23,16 @@ class Movies extends Component {
                     <FontAwesomeIcon icon="search" />
                 </StyledHeader>
                 <StyledHorizontalScroll>
-                    {this.props.movies.map(movie => (
-                        <Movie
-                            key={movie.id}
-                            name={movie.name}
-                            poster={movie.poster}
-                            duration={movie.duration}
-                            year={movie.year}
-                        />
+                    {this.props.loading
+                        ? <StyledLoader />
+                        : this.props.movies.map(movie => (
+                            <Movie
+                                key={movie.id}
+                                name={movie.name}
+                                poster={movie.poster}
+                                duration={movie.duration}
+                                year={movie.year}
+                            />
                     ))}
                 </StyledHorizontalScroll>
                 <StyledFooter>

@@ -18,7 +18,7 @@ const Root = () => {
                 <StyledContainer>
                     <Router>
                         <App/>
-                        {/*<DevTools/>*/}
+                        <DevTools/>
                     </Router>
                 </StyledContainer>
             </ThemeProvider>
