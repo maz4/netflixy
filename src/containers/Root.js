@@ -6,7 +6,7 @@ import { ToastContainer } from 'react-toastify';
 import { PersistGate } from "redux-persist/integration/react"
 import "react-toastify/dist/ReactToastify.css";
 import store, { persiststore } from '../store';
-import DevTools from './DevTools';
+// import DevTools from './DevTools';
 import StyledContainer from '../components/StyledContainer';
 import theme from '../constants/theme';
 import App from '../components/App';
@@ -20,7 +20,7 @@ const Root = () => {
                     <StyledContainer>
                         <Router>
                             <App/>
-                            <DevTools/>
+                            {/*<DevTools/>*/}
                         </Router>
                     </StyledContainer>
                 </ThemeProvider>

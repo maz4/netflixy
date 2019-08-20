@@ -11,7 +11,6 @@ import StyledMOvieLink from './StyledMovieLink';
 
 class Movies extends Component {
     componentDidMount() {
-        console.log('aaa:', this.props.movies)
         this.props.getMovies();
     }
 
