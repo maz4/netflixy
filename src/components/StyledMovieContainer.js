@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import { devices } from '../utils/styledUtils';
 
 const StyledMMovieContainer = styled.section`
+    position: relative;
     display: flex;
     flex-direction: column;
     width: 100%;
